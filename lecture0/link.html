@@ -1,9 +1,47 @@
 <!DOCTYPE html>
 <html>
     <head>
+	<style>
+a:link {
+  color:#ff0000;
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: blue;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+a.button:link, a.button:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.button:hover, a.button:active {
+  background-color: red;
+}
+</style>
         <title>My Web Page!</title>
     </head>
     <body>
-        <a href="https://google.com">Click here!</a>
+        <p>Goto google's website <a href="https://google.com" target="_blank">Click here!</a></p>
+		 <p>On link hover link text will turn red an is underline on click it will open a new target window.</p>
+		<a href="https://google.com">https://google.com</a>
+		<p>A link styled as a button</p>
+		<p><b><a class="button" href="default.asp" target="_blank">Google</a></b></p>
+
     </body>
 </html>
